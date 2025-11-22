@@ -1,0 +1,12 @@
+.section {
+  padding: 48px 0;
+  &__title {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+}
