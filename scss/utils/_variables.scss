@@ -1,9 +1,14 @@
+//
 :root {
   --color-background: #ffffff;
   --color-background-dark: #eeeff1;
-  --color-brand-light: #75bfb8;
-  --color-brand-dark: #255459;
-  --color-brown: #593a2e;
-  --color-brown-light: #a66f5b;
+  --color-brand-light: #0e6ba8;
+  --color-brand: #001c55;
+  --color-brand-dark: #0a2472;
   --color-text: #1a1c20;
+  --color-gray: #909090;
 }
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

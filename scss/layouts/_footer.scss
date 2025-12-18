@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 48px;
+  background-color: var(--color-gray);
+
+  &__paragraf {
+    color: var(--color-background);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
