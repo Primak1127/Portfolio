@@ -1,12 +1,25 @@
 .section {
-  padding: 48px 0;
+  padding: 56px 32px;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 112px 32px;
+  }
   &__title {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 1;
+    text-align: center;
+    margin: 0;
 
-    &--centered {
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 40px;
+    }
+
+    &--smaller {
+      position: relative;
+      font-size: 32px;
+      font-weight: 400;
       text-align: center;
+      margin: 0;
     }
   }
 }

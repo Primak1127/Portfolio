@@ -6,15 +6,21 @@
     <title>PryProfile</title>
     <meta name="author" content="Prymak Dmytro" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <div class="header__right"><a href="#">Prymak Dm</a></div>
+            <div>
+              <a class="header__left" href="#">Prymak Dm</a>
+            </div>
 
-            <div class="header__left">
+            <div class="header__rigth">
               <a class="link" href="#About">About</a>
               <a class="link" href="#Projects">Projects</a>
               <a class="link" href="#Skills">Skills</a>
@@ -27,19 +33,17 @@
     <main>
       <section class="about-section section" id="About">
         <div class="container">
-          <h1
-            class="about-section__title section__title section__title--centered"
-          >
-            Hey world, i'm Dima!
-          </h1>
-          <img
-            class="about-section__img"
-            src="./img/main-photo.webp"
-            alt="Cite's owner photo "
-          />
+          <h1 class="about-section__title">Hey world, i'm Dima!</h1>
+          <div class="about-section__img-container">
+            <img
+              class="about-section__img"
+              src="./img/main-photo.jpg"
+              alt="Cite's owner photo "
+            />
+          </div>
 
           <p class="about-section__text">
-            Hey! I'm begginer of fullstack developming.I'm going to build new
+            Hey! I'm begginer of fullstack developming. I'm going to build new
             IT-world for everyone who want!
           </p>
           <div class="about-section__socials">
@@ -61,23 +65,139 @@
           </div>
         </div>
       </section>
-      <section
-        class="projects-section section section__title--centered"
-        id="Projects"
-      >
-        <div class="container">
-          <div class="projects-section__container"><h2>Projects</h2></div>
+      <section class="projects-section section" id="Projects">
+        <h2 class="projects-section__title section__title">Projects</h2>
+        <h3 class="projects-section__title-small section__title--smaller">
+          Software
+        </h3>
+
+        <div class="projects-section__slider">
+          <div class="projects-section__list swiper">
+            <div class="projects-section__scroll-container swiper-wrapper">
+              <a
+                class="projects-section__card swiper-slide"
+                href="#"
+                target="_blank"
+                ><img
+                  class="projects-section__img"
+                  src="./img/project-card-dafeult.jpg"
+                  alt="Project photo"
+                />
+                <h4>Heading1</h4>
+                <p>Description</p></a
+              >
+
+              <a
+                class="projects-section__card swiper-slide"
+                href="#"
+                target="_blank"
+                ><img
+                  class="projects-section__img"
+                  src="./img/project-card-dafeult.jpg"
+                  alt="Project photo"
+                />
+                <h4>Heading2</h4>
+                <p>Description</p></a
+              >
+
+              <a
+                class="projects-section__card swiper-slide"
+                href="#"
+                target="_blank"
+                ><img
+                  class="projects-section__img"
+                  src="./img/project-card-dafeult.jpg"
+                  alt="Project photo"
+                />
+                <h4>Heading3</h4>
+                <p>Description</p></a
+              >
+
+              <a
+                class="projects-section__card swiper-slide"
+                href="#"
+                target="_blank"
+                ><img
+                  class="projects-section__img"
+                  src="./img/project-card-dafeult.jpg"
+                  alt="Project photo"
+                />
+                <h4>Heading4</h4>
+                <p>Description</p></a
+              >
+              <a
+                class="projects-section__card swiper-slide"
+                href="#"
+                target="_blank"
+                ><img
+                  class="projects-section__img"
+                  src="./img/project-card-dafeult.jpg"
+                  alt="Project photo"
+                />
+                <h4>Heading5</h4>
+                <p>Description</p></a
+              >
+              <a
+                class="projects-section__card swiper-slide"
+                href="#"
+                target="_blank"
+                ><img
+                  class="projects-section__img"
+                  src="./img/project-card-dafeult.jpg"
+                  alt="Project photo"
+                />
+                <h4>Heading6</h4>
+                <p>Description</p></a
+              >
+              <a
+                class="projects-section__card swiper-slide"
+                href="#"
+                target="_blank"
+                ><img
+                  class="projects-section__img"
+                  src="./img/project-card-dafeult.jpg"
+                  alt="Project photo"
+                />
+                <h4>Heading7</h4>
+                <p>Description</p></a
+              >
+            </div>
+          </div>
         </div>
       </section>
-      <section class="section" id="Skills">
-        <div class="section__title--centered container"><h2>Skills</h2></div>
+      <section class="skills-section section" id="Skills">
+        <div class="container">
+          <h2 class="skills-section__title section__title">Skills</h2>
+          <div class="skills-section__icons">
+            <svg class="skills-section__item" width="60" height="60">
+              <use href="./img/icons.svg#icon-html-five"></use>
+            </svg>
+            <svg class="skills-section__item" width="60" height="60">
+              <use href="./img/icons.svg#icon-css3"></use>
+            </svg>
+            <svg class="skills-section__item" width="60" height="60">
+              <use href="./img/icons.svg#icon-git"></use>
+            </svg>
+          </div>
+        </div>
       </section>
-      <section class="section" id="Message">
-        <div class="section__title--centered container">
-          <h2>Leave me a Message!</h2>
+      <section class="message-section section" id="Message">
+        <div class="container">
+          <h2 class="message-section__title">Leave me a Message!</h2>
+
+          <div>
+            <p class="message-section__paragraf">Comming soon ;)</p>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__paragraf">
+        &copy; 2025 Prymak Dm. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

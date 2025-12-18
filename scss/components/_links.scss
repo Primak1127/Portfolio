@@ -1,8 +1,9 @@
 .link {
+  display: inline-block;
   color: var(--color-text);
   transition: color 0.3s;
 
   &:hover {
-    color: var(--color-brown);
+    color: var(--color-brand-light);
   }
 }

@@ -1,0 +1,36 @@
+.skills-section {
+  background-color: var(--color-background-dark);
+
+  &__title {
+    margin-bottom: 50px;
+    position: relative;
+    line-height: 1;
+
+    &::before {
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      bottom: -15px;
+      background-color: var(--color-brand-dark);
+      border-radius: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+    fill: var(--color-brand-dark);
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: var(--color-brand-light);
+    }
+  }
+}
