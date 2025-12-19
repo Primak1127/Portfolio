@@ -1,24 +1,18 @@
 const swiper = new Swiper(".swiper", {
   loop: true,
-  slidesPerView: "auto",
+  slidesPerView: 1,
 
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 2,
-  //   },
-  //   1280: {
-  //     slidesPerView: 3,
-  //   },
-  // },
-  spaceBetween: 20, // відствань між слайдами
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
   },
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  spaceBetween: 10, // відствань між слайдами
 });

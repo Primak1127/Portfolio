@@ -9,6 +9,7 @@
     line-height: 1;
     text-align: center;
     margin: 0;
+    margin-bottom: 10px;
 
     @media screen and (min-width: $bp-tablet) {
       font-size: 40px;
@@ -16,10 +17,11 @@
 
     &--smaller {
       position: relative;
-      font-size: 32px;
+      font-size: 25px;
       font-weight: 400;
       text-align: center;
       margin: 0;
+      text-decoration: underline;
     }
   }
 }

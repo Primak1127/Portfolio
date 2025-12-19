@@ -10,7 +10,7 @@ body {
   font-family: "Shantell Sans", serif;
   font-size: 12px;
   font-weight: 400;
-  background-color: var(--color-background);
+  background-color: var(--color-background-dark);
   // padding-top: 30px;
   overflow-x: hidden;
 }
@@ -32,8 +32,12 @@ h5,
 h6,
 p {
   margin-top: 0;
+  text-align: center;
+  align-items: center;
 }
-
+h4 {
+  font-size: 15px;
+}
 a {
   display: inline-block;
   list-style-type: none;
