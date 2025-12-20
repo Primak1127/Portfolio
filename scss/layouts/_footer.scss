@@ -2,13 +2,21 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 48px;
+  padding: 40px;
   background-color: var(--color-gray);
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px;
+  }
 
   &__paragraf {
     color: var(--color-background);
     margin: 0;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 300;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
   }
 }
